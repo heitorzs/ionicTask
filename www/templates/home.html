@@ -10,6 +10,7 @@
       <ion-list show-delete="shouldShowDelete">
               <ion-item class="item-toggle" ng-repeat="item in lista">
                 <ion-delete-button class="ion-minus-circled" ng-click ="showConfirm(item)"></ion-delete-button>
+                <ion-option-button class="button-positive" ng-click ="showPopup(item)">Editar</ion-option-button>
                 <li>
                   {{item.nome}}
                   <label class="toggle toggle-assertive">

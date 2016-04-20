@@ -1,3 +1,6 @@
 .list li {
   list-style: none;
 }
+.item-toggle {
+  pointer-events: all;
+}
