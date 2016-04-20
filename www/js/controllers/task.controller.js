@@ -32,4 +32,22 @@ controllers.controller('TaskCtrl',function($scope, TaskService, $ionicPopup){
   $scope.toggleDelete = function(){
     $scope.shouldShowDelete = !$scope.shouldShowDelete;
   };
+  $scope.deletar = function(item){
+    $scope.lista.splice($scope.lista.indexOf(item), 1);
+  };
+  $scope.showConfirm = function(item) {
+     var confirmPopup = $ionicPopup.confirm({
+       title: 'Excluir Tarefa',
+       template: 'Voce tem certeza que quer excluir essa tarefa?'
+     });
+
+     confirmPopup.then(function(res) {
+       if(res) {
+         $scope.deletar(item);
+         alert('Tarefa excluida com sucesso')
+       } else {
+         console.log('You are not sure');
+       }
+     });
+   };
 });
