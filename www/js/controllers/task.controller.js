@@ -29,4 +29,7 @@ controllers.controller('TaskCtrl',function($scope, TaskService, $ionicPopup){
         ]
       });
   };
+  $scope.toggleDelete = function(){
+    $scope.shouldShowDelete = !$scope.shouldShowDelete;
+  };
 });
