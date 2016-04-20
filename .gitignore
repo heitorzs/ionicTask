@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Specifies intentionally untracked files to ignore when using Git
 # http://git-scm.com/docs/gitignore
 
@@ -39,4 +38,3 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
->>>>>>> 2eb3f56e5283ec911e598177742cbaf9acc41b62
